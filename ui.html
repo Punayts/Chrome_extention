@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Extension UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Phishing Prevention
+    </h1>
+    <div class="nav-buttons">
+      <button id="checkerBtn" class="active">Checker</button>
+      <button id="statsBtn" class="inactive">Stats</button>
+    </div>
+
+    <div id="checkerPage" class="page hidden">
+      <div class="url-box">
+        <p>URL</p>
+        <div class="status-circle">malware/phishing<br>detected</div>
+        <button class="host-btn">view host location</button>
+      </div>
+      <div class="info-list">
+        <p>Ads</p>
+        <p>Malware</p>
+        <p>Phishing</p>
+      </div>
+    </div>
+
+    <div id="statsPage" class="page">
+      <div class="stats-box">Statistics</div>
+      <div class="stat-buttons">
+        <button>Ads</button>
+        <button>Malware</button>
+        <button>Phishing</button>
+      </div>
+      <div class="total-display">
+        <strong>Total</strong>: Ads/Malware/Phishing
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <p>Tips/Recommendation</p>
+    </div>
+  </div>
+
+  <script>
+    const checkerBtn = document.getElementById('checkerBtn');
+    const statsBtn = document.getElementById('statsBtn');
+    const checkerPage = document.getElementById('checkerPage');
+    const statsPage = document.getElementById('statsPage');
+
+    checkerBtn.addEventListener('click', () => {
+      checkerPage.classList.remove('hidden');
+      statsPage.classList.add('hidden');
+      checkerBtn.classList.add('active');
+      checkerBtn.classList.remove('inactive');
+      statsBtn.classList.remove('active');
+      statsBtn.classList.add('inactive');
+    });
+
+    statsBtn.addEventListener('click', () => {
+      checkerPage.classList.add('hidden');
+      statsPage.classList.remove('hidden');
+      statsBtn.classList.add('active');
+      statsBtn.classList.remove('inactive');
+      checkerBtn.classList.remove('active');
+      checkerBtn.classList.add('inactive');
+    });
+  </script>
+</body>
+</html>
