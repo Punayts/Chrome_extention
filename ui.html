@@ -8,31 +8,28 @@
 </head>
 <body>
   <div class="container">
-    <h1>Phishing Prevention
-    </h1>
+    <h1>Phishing Prevention</h1>
     <div class="nav-buttons">
-      <button id="checkerBtn" class="active">Checker</button>
-      <button id="statsBtn" class="inactive">Stats</button>
+      <button id="checkerBtn" class="btn">Checker</button>
+      <button id="statsBtn" class="btn">Stats</button>
     </div>
 
-    <div id="checkerPage" class="page hidden">
+    <div id="checkerPage" class="page">
       <div class="url-box">
         <p>URL</p>
         <div class="status-circle">malware/phishing<br>detected</div>
-        <button class="host-btn">view host location</button>
+        <button class="btn">view host location</button>
       </div>
       <div class="info-list">
         <p>Ads</p>
-        <p>Malware</p>
         <p>Phishing</p>
       </div>
     </div>
 
-    <div id="statsPage" class="page">
+    <div id="statsPage" class="page hidden">
       <div class="stats-box">Statistics</div>
       <div class="stat-buttons">
         <button>Ads</button>
-        <button>Malware</button>
         <button>Phishing</button>
       </div>
       <div class="total-display">
