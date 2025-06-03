@@ -1,37 +1,34 @@
 body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+  background-color: transparent; /* Removes the gray background */
+  margin: 0;
+  padding: 0;
     }
 
-.container {
-      width: 475px;
-  height: 675px;
-  background: white;
+    .container {
+      width: 100%;
+      max-width: 475px;
+  background: transparent;;
   border: 2px solid #ccc;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   box-sizing: border-box;
-  overflow: hidden;
     }
 
-.title {
+    .title {
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
-.nav {
+    .nav {
       display: flex;
       gap: 10px;
       margin-bottom: 20px;
     }
 
-.nav button {
+    .nav button {
       flex: 1;
       padding: 10px;
       font-size: 16px;
@@ -40,19 +37,19 @@ body {
       cursor: pointer;
     }
 
-.nav .active {
+    .nav .active {
       background-color: #555;
       color: white;
     }
 
-.checkerBtn {
+    .checkerBtn {
       border: 2px solid #333;
       padding: 20px;
       margin-bottom: 20px;
       text-align: center;
     }
 
-.circle {
+    .circle {
       border: 2px solid black;
       border-radius: 50%;
       width: 120px;
@@ -63,7 +60,7 @@ body {
       margin: 10px auto;
     }
 
-.host-btn {
+    .host-btn {
       padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
@@ -78,30 +75,30 @@ body {
   cursor: pointer;
   outline: none;
     }
-.host-btn:hover {
+    .host-btn:hover {
       background-color: #555;
   box-shadow: 0px 15px 20px rgba(23, 23, 23, 0.4);
   color: #fff;
   transform: translateY(-7px);
     }
-.host-btn:active{
+    .host-btn:active{
       transform: translateY(-1px);
     }
 
-.details {
+    .details {
       text-align: left;
       font-size: 18px;
       margin: 10px 0;
     }
 
-.tips {
+    .tips {
       border-top: 2px solid #000;
       margin-top: 20px;
       padding-top: 10px;
       text-align: center;
       font-weight: bold;
     }
-.nav-buttons button {
+    .nav-buttons button {
   margin-right: 10px;
   padding: 10px 20px;
   border: none;
