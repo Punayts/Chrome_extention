@@ -1,0 +1,130 @@
+
+    :root {
+      --dark-green: #012b09;
+      --mid-green: #94bb86;
+      --cream: #ffffe9;
+      --pure-white: #ffffff;
+      --blush: #f7ebe2;
+      --gold: #d4af37;
+      --text-dark: #1e1e1e;
+      --text-muted: #4a4a4a;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 475px;
+      height: 600px;
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .container {
+      background: var(--pure-white);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .banner {
+      background-color: var(--dark-green);
+      padding: 14px;
+      text-align: center;
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 10px;
+      background-color: var(--blush);
+    }
+
+    .nav-buttons button {
+      flex: 1;
+      padding: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      background-color: var(--cream);
+      color: var(--dark-green);
+      border: 1.5px solid var(--mid-green);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .nav-buttons .active {
+      background-color: var(--mid-green);
+      color: white;
+    }
+
+    .page {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .page.hidden {
+      display: none;
+    }
+
+    .section-box {
+      background: var(--cream);
+      border: 1px solid var(--blush);
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .status-circle {
+      background-color: var(--pure-white);
+      border: 2px solid var(--gold);
+      color: var(--dark-green);
+      font-weight: 600;
+      width: 100px;
+      height: 100px;
+      margin: 12px auto;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .btn {
+      background-color: var(--gold);
+      color: var(--pure-white);
+      border: none;
+      padding: 8px 16px;
+      font-weight: 600;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #b6912e;
+    }
+
+    .tips-box {
+      border-top: 1px solid var(--blush);
+      padding: 15px 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+      background-color: var(--cream);
+    }

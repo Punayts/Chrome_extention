@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Prevention UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<script src="utils/googleSafeBrowsing.js"></script>
+<script src="utils/hostLocation.js"></script>
+<script src="popup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="banner">Stay Protected. Detect Phishing Threats Instantly.</div>
+    <div class="nav-buttons">
+      <button id="checkerBtn" class="active">Checker</button>
+      <button id="statsBtn" class="inactive">Stats</button>
+    </div>
+
+    <div id="checkerPage" class="page">
+      <div class="section-box">
+        <strong>Scanned URL:</strong>
+        <p id="scannedUrl" style="margin-top: 4px; font-size: 13px;">Loading...</p>
+        <div class="status-circle">Phishing<br>Detected</div>
+        <button class="btn" id="hostLocationBtn">View Host Location</button>
+      </div>
+      <div class="section-box">
+        <strong>Classification:</strong>
+        <p style="margin-top: 4px; font-size: 13px;">Phishing Threat Identified</p>
+      </div>
+    </div>
+
+    <div id="statsPage" class="page hidden">
+      <div class="section-box">
+        <strong>Phishing Statistics</strong>
+        <p style="margin: 10px 0 0 0; font-size: 13px;">Total Threats Detected: <strong>15</strong></p>
+        <div class="btn" style="margin-top: 14px;">View Breakdown</div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      Tip: Avoid clicking on unknown links or downloading suspicious files.
+    </div>
+  </div>
+
+</body>
+</html>
